@@ -96,7 +96,7 @@ const Header: React.FC<HeaderProps> = ({ scrollY }) => {
       {/* Mobile Menu */}
       <div className={`md:hidden transition-all duration-300 overflow-hidden ${
         isMenuOpen 
-          ? 'max-h-64 opacity-100' 
+          ? 'max-h-72 opacity-100' 
           : 'max-h-0 opacity-0'
       }`}>
         <div className="bg-slate-900/95 backdrop-blur-sm border-t border-purple-500/20">

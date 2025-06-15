@@ -66,7 +66,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+    <section id="home" className="relative min-h-screen py-36 sm:py-0 flex items-center justify-center px-4 overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-800">
         {/* Floating Particles */}
@@ -232,7 +232,7 @@ const HeroSection: React.FC = () => {
 
       {/* Scroll Indicator */}
       <div 
-        className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 ${
+        className={`absolute sm:bottom-8 bottom-2 left-1/2 transform -translate-x-1/2 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
         style={{ transitionDelay: '1600ms' }}
