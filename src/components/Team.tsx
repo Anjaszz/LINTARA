@@ -36,64 +36,41 @@ const TeamSection: React.FC = () => {
     },
     {
       id: 2,
-      name: "Sari Dewi",
+      name: "Ridwan Saputra",
       position: "Lead Developer",
       description: "Expert dalam pengembangan web dan mobile applications",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
+      image: "https://chilinet.my.id/static/assets/p7.jpeg",
       social: {
         github: "https://github.com/saridewi",
         linkedin: "https://linkedin.com/in/saridewi",
-        email: "sari.dewi@lintara.id"
+         instagram: "https://www.instagram.com/ridwansaputra_62"
       }
     },
     {
       id: 3,
-      name: "Budi Santoso",
+      name: "Nabil Irwansyah",
       position: "AI Engineer",
       description: "Spesialis dalam machine learning dan artificial intelligence",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
+      image: "https://chilinet.my.id/static/assets/nabil.jpeg",
       social: {
-        github: "https://github.com/budisantoso",
-        linkedin: "https://linkedin.com/in/budisantoso",
-        email: "budi.santoso@lintara.id"
+        github: "https://github.com",
+        linkedin: "https://linkedin.com",
+         instagram: "https://www.instagram.com/bill_irwansyah"
       }
     },
     {
       id: 4,
-      name: "Maya Putri",
-      position: "UI/UX Designer",
-      description: "Creative designer dengan passion untuk user experience",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
+      name: "Annisa Nur Amelia",
+      position: "Financial Manager",
+      description: "Mengelola perencanaan keuangan, anggaran, dan pelaporan untuk memastikan kesehatan finansial perusahaan.",
+      image: "https://chilinet.my.id/static/assets/amel.jpg",
       social: {
-        github: "https://github.com/mayaputri",
-        linkedin: "https://linkedin.com/in/mayaputri",
-        email: "maya.putri@lintara.id"
+        github: "https://github.com",
+        linkedin: "https://linkedin.com",
+         instagram: "https://www.instagram.com/annisanrml_"
       }
     },
-    {
-      id: 5,
-      name: "Andi Pratama",
-      position: "Backend Developer",
-      description: "Expert dalam sistem backend dan database management",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
-      social: {
-        github: "https://github.com/andipratama",
-        linkedin: "https://linkedin.com/in/andipratama",
-        email: "andi.pratama@lintara.id"
-      }
-    },
-    {
-      id: 6,
-      name: "Lisa Anggraini",
-      position: "Project Manager",
-      description: "Koordinator proyek yang berpengalaman dalam agile methodology",
-      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
-      social: {
-        github: "https://github.com/lisaanggraini",
-        linkedin: "https://linkedin.com/in/lisaanggraini",
-        email: "lisa.anggraini@lintara.id"
-      }
-    }
+
   ];
 
   // Pisahkan founder dan team members
@@ -181,9 +158,9 @@ const TeamSection: React.FC = () => {
         )}
 
         {/* Team Members Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 ">
           {members.map((member, index) => (
-            <div key={member.id} 
+            <div  key={member.id} 
                  className="group relative bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105"
                  style={{ animationDelay: `${index * 100}ms` }}>
               
